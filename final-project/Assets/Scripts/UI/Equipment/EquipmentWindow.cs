@@ -16,6 +16,9 @@ public class EquipmentWindow : MonoBehaviour
     [Header("Layout")]
     [SerializeField] private float _windowWidth = 520f;
 
+    [Header("Preview")]
+    [SerializeField] private Transform _previewCharacter;
+
     public void BuildEquipment(GameWindow window)
     {
         if (_equipmentWindowTemplate == null || _itemSlotTemplate == null)
@@ -43,6 +46,10 @@ public class EquipmentWindow : MonoBehaviour
         }
 
         window.ContentArea.Add(content);
+
+        var previewArea = content.Q<VisualElement>("preview-area");
+        if (_previewCharacter != null)
+            previewArea.AddManipulator(new PreviewRotateManipulator(previewArea, _previewCharacter));
     }
 }
 

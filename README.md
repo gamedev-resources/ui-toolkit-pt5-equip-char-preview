@@ -1,6 +1,6 @@
 [![YouTube](https://img.shields.io/badge/YouTube-Watch%20on%20YouTube-red?logo=youtube&logoColor=white)](https://youtu.be/iKZRYDTTF-A)
 
-# Part 5: Render a 3D Character Preview
+# Part 5: Dynamically Render a 3D Character Preview
 
 <a href="https://youtu.be/iKZRYDTTF-A"><img src="image/ui-pt-5.png" alt="Video thumbnail" width="600"></a>
 
